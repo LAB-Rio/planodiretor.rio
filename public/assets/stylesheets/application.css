@@ -130,11 +130,43 @@ svg {
 }
 
 .plano-diretor-content {
-  min-height: 400px;
+  min-height: 700px;
   background: #0D2A4C;
 }
 
-.plano-diretor-content h2, .plano-diretor-content hr {
+.bg-content {
+  padding-bottom: 2em;
+}
+
+.bg-content h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-bottom: .4em;
+  font-weight: bold;
+}
+
+.green h2 {
+  color: #99cc33;
+  border-bottom: 1px solid #99cc33;
+}
+
+.blue h2 {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.gray {
+  background: #d9d9d9;
+}
+
+.gray h2 {
+  color: #0D2A4C; 
+  border-bottom: 1px solid #0D2A4C;
+}
+
+
+
+
+.plano-diretor-content h2 {
   color: white;
 }
 
@@ -142,22 +174,53 @@ svg {
   list-style-type: none;
   margin: 0;
   position: relative;
+  width: 100%;
 }
 
 
 .plano-diretor-content .segments li {
   display: inline-block;
+  width: 19%;
+  text-align: center;
 
 }
 
 
-.plano-diretor-content .segments li .seg-content {
+.plano-diretor-content .segments li:hover * {
+ opacity: 1;
+}
 
+.plano-diretor-content .segments li img {
+  opacity: .3;
+}
+
+
+.plano-diretor-content .segments li.active img {
+  opacity: 1;
+}
+
+
+.segments li a {
+  color: white;
+  font-weight: bold; 
+  text-transform: uppercase;
+  font-size: .7em;
+}
+
+.plano-diretor-content .segments li .seg-content {
+  margin-top: 2em;
 }
 
 .seg-content {
   position: absolute;
   margin-top: .4em;
-  padding: 3em;
+  padding: 2em 3em;
   background: #eeeeee;
+}
+
+
+.plano-diretor-content .segments span {
+  display: block; 
+  opacity: .8;
+  padding: .8em;
 }
