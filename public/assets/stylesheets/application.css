@@ -1,0 +1,163 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+svg {
+  width: 25px;
+
+}
+#header {
+  background: url('../images/background.png') no-repeat; 
+  background-size: cover;
+  color: white;
+}
+
+
+#fixed-header {
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: -20%;
+  padding: 1em 0;
+  z-index: 9999;
+  box-shadow: 0 1px 1px #999;
+  transition: all .2s;
+}
+
+#fixed-header svg {
+  margin-top: .7em;
+  
+}
+
+#header .header-inner {
+  padding: 3em 0; 
+}
+
+#header .logo img {
+  width: 160px;
+}
+
+#header .main-text {
+  margin-top: 8%;
+}
+
+#header h1 {
+  color: white;
+  font-weight: 500;
+}
+
+#header hr {
+  width: 10%;
+  margin: 3em auto 1.4em auto;
+}
+
+#header .button {
+  background: none;
+  border: 2px solid #99cc33;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: 25%;
+}
+
+
+#header .button:hover {
+  background: #99cc33 
+}
+
+
+.section {
+  margin: 4em auto;
+}
+
+.section-block {
+  background: #eee;
+  overflow: hidden;
+
+}
+
+
+.section-block p {
+  padding: 2em;
+}
+
+
+
+#footer {
+  background: #333;
+  padding: 2em 0;
+}
+
+#page-header .header-inner {
+  padding: 1em 0;
+}
+
+
+.plano-diretor.description h1 {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.8em;
+  margin-bottom: .6em;
+}
+
+.plano-diretor.description {
+  background: url('../images/plano-bg.png') no-repeat; 
+  background-size: cover;
+  color: white;
+  padding: 2.8em; 
+}
+
+.plano-diretor.description .tabs {
+  text-transform: uppercase;
+}
+  
+.plano-diretor.description .tabs a {
+  color: #e9e9e9;
+  font-size: .8em;
+  display: inline-block;
+  margin-right: 1.6em;
+  text-shadow: 0 1px 1px #444;
+  font-weight: 500;
+
+}
+
+.plano-diretor.description .tabs a:hover {
+  border-bottom: 1px solid #99cc33; 
+}
+
+.plano-diretor.description .tabs a:last-child {
+  margin-right: 0;
+}
+
+.plano-diretor-content {
+  min-height: 400px;
+  background: #0D2A4C;
+}
+
+.plano-diretor-content h2, .plano-diretor-content hr {
+  color: white;
+}
+
+.plano-diretor-content .segments {
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+}
+
+
+.plano-diretor-content .segments li {
+  display: inline-block;
+
+}
+
+
+.plano-diretor-content .segments li .seg-content {
+
+}
+
+.seg-content {
+  position: absolute;
+  margin-top: .4em;
+  padding: 3em;
+  background: #eeeeee;
+}
