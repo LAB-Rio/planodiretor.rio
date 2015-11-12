@@ -145,7 +145,17 @@ svg {
   font-weight: bold;
 }
 
+.green {
+  background: #99cc33;
+}
+
 .green h2 {
+  color: #0D2A4C !important;
+  border-bottom: 1px solid #0D2A4C;
+}
+
+
+.white h2 {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
@@ -224,3 +234,19 @@ svg {
   opacity: .8;
   padding: .8em;
 }
+
+
+.acompanhamento-content .columns .bg { margin-bottom: 1.2em; background: #0D2A4C; }
+.acompanhamento-content .order {
+  display: inline-block; 
+  background: white;
+  font-size: 1.6em;
+  padding: .2em .6em;
+  font-weight: bold;
+  margin-right: .4em; 
+
+}
+
+.acompanhamento-content a { 
+  color: white;
+}   
