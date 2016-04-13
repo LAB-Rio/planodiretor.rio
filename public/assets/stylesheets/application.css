@@ -1977,3 +1977,8 @@ svg {
 .medium-4.columns.card.card-effect.box-feature {
     padding: 0;
 }
+
+h1.titulo.historico {
+    font-size: 19px;
+    font-weight: 600;
+}
