@@ -1982,3 +1982,12 @@ h1.titulo.historico {
     font-size: 19px;
     font-weight: 600;
 }
+
+
+a.read-more, a.read-more, a.read-more:hover {
+    color: #99cc33;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    background: transparent;
+}

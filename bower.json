@@ -1,0 +1,30 @@
+{
+  "name": "PlanoDiretor",
+  "version": "0.0.2",
+  "homepage": "http://planodiretor.rio",
+  "authors": [
+    "Frederick Silva <fredericksilva@outlook.com>"
+  ],
+  "description": "Plano Diretor da Cidade do Rio de Janeiro",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "d3js",
+    "ruby",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "d3": "~3.5.16",
+    "jquery": "~2.2.3"
+  }
+}
