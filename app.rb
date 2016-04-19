@@ -14,13 +14,15 @@ get '/sobre' do
     send_file 'public/plano-diretor.html'
 end
 
-get '/avaliacao'
+
+get '/avaliacao' do
     send_file 'public/avaliacao.html'
 end
 
-get '/acompanhamento'
+get '/acompanhamento' do
     send_file 'public/acompanhamento.html'
 end
+
 
 get '/stylesheets/:name.css' do
  content_type 'text/css', :charset => 'utf-8'
