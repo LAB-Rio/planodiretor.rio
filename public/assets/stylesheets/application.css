@@ -1718,6 +1718,9 @@ svg {
 }
 
 
+.historio > ul > li{
+  list-style: none;
+}
 
 #footer {
   background: #333;

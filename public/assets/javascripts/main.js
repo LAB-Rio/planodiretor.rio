@@ -13,3 +13,12 @@ var topBar      = document.getElementById('fixed-header');
     window.addEventListener('scroll', function(){
       requestAnimationFrame(parallax);
     }, false);
+    
+    
+    	$(".tab").on("click",function(){
+  		 console.log('acabei de clicar');
+  		  var a = $(this).attr("href");
+  		  $(".tabs-content>div.active").removeClass("active");
+  		  $(".tabs-content>div"+a).addClass("active");
+  		  return false;
+	  });
