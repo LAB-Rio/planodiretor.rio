@@ -23,8 +23,8 @@
     ga('send', 'pageview');
 
   </script>
-  
-
+   <script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+  <script src="/assets/javascripts/vendor/readmore.min.js"></script>
 </head>
 <body>
 
@@ -239,16 +239,16 @@
       <a href="">LAB.Rio</a>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
-  <script src="assets/javascripts/vendor/readmore.min.js"></script>
-  <script type="text/javascript">
-    $('article').readmore({
-      moreLink: '<a class="read-more" href="#">Leia Mais</a>',
-      speed: 85,
-      lessLink: '<a href="#">Leia menos</a>'
-    });
+ <script>
   
-    var topBar      = document.getElementById('fixed-header');
+  $('article').readmore({
+    moreLink: '<a class="read-more" href="#">Leia Mais</a>',
+    speed: 85,
+    lessLink: '<a href="#">Leia menos</a>'
+  });
+ 
+ 
+   var topBar      = document.getElementById('fixed-header');
 
     function parallax(){
 
@@ -266,7 +266,7 @@
 
 
 
-  </script>
+ </script>
   
 
 </body>
