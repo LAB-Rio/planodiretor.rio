@@ -1,15 +1,5 @@
 (function($) {
 	
-	$(".tab").on("click",function(){
-		 console.log('acabei de clicar');
-		  var a = $(this).attr("href");
-		  $(".tabs-content>div.active").removeClass("active");
-		  $(".tabs-content>div"+a).addClass("active");
-		  return false;
-	});
-	
-	
-
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',

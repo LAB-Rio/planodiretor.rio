@@ -1,7 +1,10 @@
-var topBar      = document.getElementById('fixed-header');
+(function () {
+    'use strict'
+    console.log("Plano Diretor by LAB.Rio");
+    
+    var topBar= document.getElementById('fixed-header');
 
     function parallax(){
-
       if (window.pageYOffset > 100) {
         topBar.style.top = "0px";
       } else { 
@@ -16,9 +19,10 @@ var topBar      = document.getElementById('fixed-header');
     
     
     	$(".tab").on("click",function(){
-  		 console.log('acabei de clicar');
   		  var a = $(this).attr("href");
   		  $(".tabs-content>div.active").removeClass("active");
   		  $(".tabs-content>div"+a).addClass("active");
   		  return false;
 	  });
+    
+}());
