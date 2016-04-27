@@ -1,0 +1,23 @@
+{
+  "name": "plano-diretor",
+  "version": "1.0.0",
+  "description": "### instructions ``` $ bundle install  $ ruby app.rb  ``` ## How to isntall on Windows",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bower": "0.6.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LAB-Rio/planodiretor.rio.git"
+  },
+  "author": "Frederick Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LAB-Rio/planodiretor.rio/issues"
+  },
+  "homepage": "https://github.com/LAB-Rio/planodiretor.rio#readme"
+}

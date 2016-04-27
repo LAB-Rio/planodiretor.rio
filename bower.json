@@ -1,0 +1,27 @@
+{
+  "name": "Plano Diretor",
+  "version": "0.0.1",
+  "homepage": "https://github.com/LAB-Rio/planodiretor.rio",
+  "authors": [
+    "Frederick Silva <fredericksilva@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bubble-chart": "*",
+    "cafej": "*",
+    "d3-transform": "~1.0.4",
+    "d3": "~3.5.16",
+    "jquery": "~2.2.3",
+    "microplugin": "~0.0.3"
+  }
+}
