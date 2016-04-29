@@ -2026,3 +2026,23 @@ label select {
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
 }
+
+li h2 {
+  text-align: center;
+}
+
+.etapa .--title{
+  text-align: center;
+}
+.etapa .--sub{
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.center{
+  text-align: center;
+}
+
+a img.logo{
+    height: 40px;
+}
