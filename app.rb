@@ -14,6 +14,8 @@ get '/sobre' do
     send_file 'public/plano-diretor.html'
 end
 
+get '/Files/:value' do
+end
 
 get '/avaliacao' do
     send_file 'public/avaliacao.html'
@@ -21,6 +23,7 @@ end
 
 get '/acompanhamento' do
     send_file 'public/acompanhamento.html'
+    
 end
 
 

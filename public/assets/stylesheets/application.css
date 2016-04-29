@@ -1994,3 +1994,35 @@ a.read-more, a.read-more, a.read-more:hover {
     text-align: center;
     background: transparent;
 }
+
+/** Avaliação Participativa ***/
+article ul li{
+  list-style: none;
+}
+article p span{
+  font-weight: 600;
+}
+.bg {
+  display: flex;
+}
+.bg label, .bg a{
+  justify-content: center;
+  padding: 10px 0px 0px 0px;
+}
+.bg label select {
+  background-color:  #0D2A4C;
+  color: #fff;
+  border: none;
+  padding: 5px 0px;
+  margin: 0px;
+}
+
+.bg label select:focus{
+  border-color: #0D2A4C;
+  
+}
+label select {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+}
