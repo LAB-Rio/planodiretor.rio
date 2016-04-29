@@ -23,7 +23,6 @@ end
 
 get '/acompanhamento' do
     send_file 'public/acompanhamento.html'
-    
 end
 
 
