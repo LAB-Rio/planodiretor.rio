@@ -2044,3 +2044,56 @@ li h2 {
 a img.logo{
   height: 40px;
 }
+
+.bold{
+  font-weight: 600;
+}
+.tab-content__inf p{
+
+	line-height:200%;
+	text-align: justify;
+}
+
+.tab_item ul { 
+   list-style-type: disc; 
+   list-style-position: inside; 
+}
+.tab_item ol { 
+   list-style-type: decimal; 
+   list-style-position: inside; 
+}
+.tab_item ul ul,.tab_item ol ul { 
+   list-style-type: circle; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
+.tab_item ol ol,.tab_item ul ol { 
+   list-style-type: lower-latin; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
+
+.tab_item ul li {
+  width: 100%;
+}
+
+.tab_item ul .list-classic{
+  width: 100%;
+}
+
+.tab_item a.button 
+,.tab_content a.button {
+    background: none;
+    border: 2px solid #99cc33;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-bottom: 25%;
+    color: #0D2A4C;
+}
+
+.tab_item  a.button:hover, 
+.tab_content a.button:hover {
+  background: #99cc33 
+  color: #fff;
+}
