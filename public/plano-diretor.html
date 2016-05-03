@@ -28,7 +28,16 @@
    <script src="../bower_components/foundation/js/foundation/foundation.accordion.js"></script>
    <script src="../bower_components/foundation/js/foundation/foundation.tab.js"></script>
   <script src="/assets/javascripts/vendor/readmore.min.js"></script>
+  <script src="/assets/javascripts/main.js"></script>
 </head>
+  <script>
+    $(".tab_item").not(":first").hide();
+    $(".wrapper .tab").click(function() {
+    	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+    	$(".tab_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+  </script>
+  
 <body>
 
   <div id="fixed-header">  
@@ -173,115 +182,105 @@
 
     <div class="bg-content blue plano-diretor-content">
       <div class="row">
+  
         <h2 id="entenda-o-plano"> Entenda o Plano </h2>
-        <ol class="segments" data-tab>
-          <li class="active">
-            <a href="#panel1" class="tab"><img src="./assets/images/icon-1.png" alt="" title=""/> <span>Política Urbano</span></a>
-            <div id="panel-planejamento" class="seg-content">
-              
-
-            </div>
-          </li>
-
-          <li>
-            <a href="#panel2" class="tab"><img src="./assets/images/icon-2.png" alt="" title=""/> <span>Ordenamento Territorial</span></span></a>
-            
-          </li>          
-          <li>
-            <a href="#panel-setoriais" class="tab">
-              <img src="./assets/images/icon-3.png" alt="" title=""/> <span>Políticas Setoriais</span></a>
-          </li>   
-          <li>
-            <a href="#panel-Instrumentos" class="tab"><img src="./assets/images/icon-4.png" alt="" title=""/> <span>Instrumentos</span></a>
-          </li>
-
-          <li>
-            <a href="#panel-Sistemas" class="tab"><img src="./assets/images/icon-5.png" alt="" title=""/> <span>Sistemas</span></a>
-          </li>
-          <div class="tabs-content">
-            <div class=" seg-content active" id="panel-planejamento">
-              <h3>Política Urbano</h3>
-                <p>Como estabelecido na Constituição Federal e na <a href="http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10257.htm">Lei Federal Nº 10.257 de 2001</a>, conhecida como “Estatuto da Cidade”, o Plano Diretor de Desenvolvimento Urbano Sustentável define a Política de Desenvolvimento Urbano para o município do Rio de Janeiro, de forma a ordenar o pleno desenvolvimento das funções sociais da cidade e garantir o bem-estar de seus habitantes.</p>
-                <p>Esta Política Urbana visa solucionar diversos problemas da cidade e planejar seu desenvolvimento futuro, o que inclui o planejamento da ocupação e expansão de seu território, formas de crescimento e ordenamento dos espaços urbanos, preservação ambiental e do patrimônio, e provisão de saneamento, transportes, habitação e serviços públicos para todos os seus habitantes.</p>
-                <p>O <b>Título I</b> do Plano Diretor traz os princípios sobre os quais a Política Urbana se apoia e as diretrizes gerais que devem guiar o planejamento da Cidade.</p>
-                <h4>A política urbana proposta pelo Plano Diretor de 2011 se baseia na garantia dos seguintes princípios:
-                </h4>
-                <ul class="list-urban-planning">
-                  <li>desenvolvimento sustentável, de forma a promover o desenvolvimento econômico, a preservação ambiental e a equidade social ;
-                  </li>
-                  <li>função social da cidade e da propriedade urbana;
-                  valorização, proteção e uso sustentável do meio ambiente, da paisagem e do patrimônio natural, cultural, histórico e arqueológico;
-                  </li>
-                  <li>universalização do acesso à terra, à moradia regular digna, à infraestrutura e aos serviços urbanos;
-                  </li>
-                  <li>democracia participativa, de forma a se promover ampla participação social;</li>
-                  <li>universalização a acessibilidade para pessoas com deficiência de qualquer natureza;
-                  </li>
-                  <li>planejamento contínuo integrado das ações governamentais apoiado pela aplicação de uma política de informação;</li>
-                  <li>articulação de políticas públicas de ordenamento, planejamento e gestão territorial, entendendo o município como cidade pólo da região metropolitana;</li>
-                  <li>cooperação entre os governos nas suas diversas instâncias, a iniciativa privada e os demais setores da sociedade.
-                  </li>
-                </ul>
-                <h4>Entre as diretrizes que norteiam a política urbana, destacam-se:</h4>
-                <ul>
-                  <li>condicionamento da ocupação urbana à proteção do patrimônio natural, cultural e paisagístico da Cidade; </li>
-                  <li>orientação da expansão urbana e do adensamento segundo a disponibilidade de saneamento básico, dos sistemas viário e de transporte e dos demais equipamentos e serviços urbanos;
-</li>
-                  <li>implantação de infraestrutura em áreas efetivamente ocupadas; </li>
-                  <li>aproveitamento dos imóveis subutilizados ou ociosos;</li>
-                  <li>ampliação da oferta habitacional de interesse social;</li>
-                  <li>incentivo ao transporte público de alta capacidade;</li>
-                  <li>controle do uso e ocupação do solo para a contenção da irregularidade fundiária, urbanística e edilícia;</li>
-                  <li>universalização do acesso ao saneamento ambiental, equipamentos urbanos e meios de transportes;</li>
-                  <li>urbanização das favelas, dos loteamentos irregulares e clandestinos de baixa renda;</li>
-                  <li>inclusão do contexto metropolitano ao planejamento da Cidade;</li>
-                  <li>adoção de soluções urbanísticas que incorporem a criação de medidas voltadas para a melhoria das condições climáticas e ambientais.</li>
-
-                
-                
-                </ul>
-            </div>
-          </div>
-          <div class="tabs-content">
-             <div class="content seg-content" id="panel-setoriais">
-            <p>
-              aprofunda o conteúdo da política proposta em temas específicos do desenvolvimento urbano: meio ambiente, patrimônio cultural, habitação, transportes, saneamento ambiental e serviços públicos;
-            </p>
-          </div>
-          </div>
-          <div class="tabs-content">
-          <div class="content seg-content" id="panel3">
-            <p>
-              territorializa a política urbana proposta nos dois Títulos anteriores sobre o território do Município;
-            </p>
-          </div>
-         </div>
-         <div class="tabs-content">
-          <div class="content seg-content" id="panel4">
-            <p>
-              ropicia os meios legais para a implementação da política urbana proposta pelo conjunto do Plano Diretor;
-            </p>
-          </div>
-        </div>
-        </div>
-        </ol>
-        <dl class="accordion" data-accordion>
-        <dd class="accordion-navigation">
-         <a href="#panel1" class="show-for-small-only">Accordion 1</a>
-	        			<div id="panel1" class="content active">
-	        				<div class="content-box section-box">
-		        				<h4>Tab / Accordion Content 1</h4>
-		        			</div>
+          <div class="wrapper">
+            <ul class="tabs segments">
+              <li class="tab"><a href="#politica-urbana" class="tab"><img src="./assets/images/icon-1.png" alt="" title=""/> <span>Política Urbano</span></a></li>
+              <li class="tab"><a href="#politica-urbana2" class="tab"><img src="./assets/images/icon-2.png" alt="" title=""/> <span>Ordenamento Territorial</span></span></a></li>
+              <li class="tab"><a href="#instrumentos" class="tab"><img src="./assets/images/icon-3.png" alt="" title=""/> <span>Políticas Setoriais</span></a></li>
+              <li class="tab"><a href="#politica-urbana4" class="tab"><img src="./assets/images/icon-4.png" alt="" title=""/> <span>Políticas Setoriais</span></a></li>
+              <li class="tab"><a href="#politica-urbana5" class="tab"><img src="./assets/images/icon-5.png" alt="" title=""/> <span>Políticas Setoriais</span></a></li>
+            </ul>
+            <div class="tab_content segments">
+               <div class="tab_item seg-content" id="politica-urbana">
+                      <h3>Política Urbano</h3>
+                      <p>Como estabelecido na Constituição Federal e na <a href="http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10257.htm">Lei Federal Nº 10.257 de 2001</a>, conhecida como “Estatuto da Cidade”, o Plano Diretor de Desenvolvimento Urbano Sustentável define a Política de Desenvolvimento Urbano para o município do Rio de Janeiro, de forma a ordenar o pleno desenvolvimento das funções sociais da cidade e garantir o bem-estar de seus habitantes.</p>
+                      <p>Esta Política Urbana visa solucionar diversos problemas da cidade e planejar seu desenvolvimento futuro, o que inclui o planejamento da ocupação e expansão de seu território, formas de crescimento e ordenamento dos espaços urbanos, preservação ambiental e do patrimônio, e provisão de saneamento, transportes, habitação e serviços públicos para todos os seus habitantes.</p>
+                      <p>O <b>Título I</b> do Plano Diretor traz os princípios sobre os quais a Política Urbana se apoia e as diretrizes gerais que devem guiar o planejamento da Cidade.</p>
+                      <h4>A política urbana proposta pelo Plano Diretor de 2011 se baseia na garantia dos seguintes princípios:
+                      </h4>
+                      <ul class="list-urban-planning">
+                        <li>desenvolvimento sustentável, de forma a promover o desenvolvimento econômico, a preservação ambiental e a equidade social ;
+                        </li>
+                        <li>função social da cidade e da propriedade urbana;
+                        valorização, proteção e uso sustentável do meio ambiente, da paisagem e do patrimônio natural, cultural, histórico e arqueológico;
+                        </li>
+                        <li>universalização do acesso à terra, à moradia regular digna, à infraestrutura e aos serviços urbanos;
+                        </li>
+                        <li>democracia participativa, de forma a se promover ampla participação social;</li>
+                        <li>universalização a acessibilidade para pessoas com deficiência de qualquer natureza;
+                        </li>
+                        <li>planejamento contínuo integrado das ações governamentais apoiado pela aplicação de uma política de informação;</li>
+                        <li>articulação de políticas públicas de ordenamento, planejamento e gestão territorial, entendendo o município como cidade pólo da região metropolitana;</li>
+                        <li>cooperação entre os governos nas suas diversas instâncias, a iniciativa privada e os demais setores da sociedade.
+                        </li>
+                      </ul>
+                      <h4>Entre as diretrizes que norteiam a política urbana, destacam-se:</h4>
+                      <ul>
+                        <li>condicionamento da ocupação urbana à proteção do patrimônio natural, cultural e paisagístico da Cidade; </li>
+                        <li>orientação da expansão urbana e do adensamento segundo a disponibilidade de saneamento básico, dos sistemas viário e de transporte e dos demais equipamentos e serviços urbanos;
+      </li>
+                        <li>implantação de infraestrutura em áreas efetivamente ocupadas; </li>
+                        <li>aproveitamento dos imóveis subutilizados ou ociosos;</li>
+                        <li>ampliação da oferta habitacional de interesse social;</li>
+                        <li>incentivo ao transporte público de alta capacidade;</li>
+                        <li>controle do uso e ocupação do solo para a contenção da irregularidade fundiária, urbanística e edilícia;</li>
+                        <li>universalização do acesso ao saneamento ambiental, equipamentos urbanos e meios de transportes;</li>
+                        <li>urbanização das favelas, dos loteamentos irregulares e clandestinos de baixa renda;</li>
+                        <li>inclusão do contexto metropolitano ao planejamento da Cidade;</li>
+                        <li>adoção de soluções urbanísticas que incorporem a criação de medidas voltadas para a melhoria das condições climáticas e ambientais.</li>
+      
+                      
+                      
+                      </ul>
+                  </div>
                 </div>
+              </div>
+               <div class="tab_item seg-content" id="politica-urbana2">
+                 <p>O Título II do Plano Diretor trata do ordenamento territorial e das diretrizes gerais para o uso e ocupação do território.
+
+O ordenamento territorial da cidade é condicionado pelas características ambientais, tendo como referência as bacias e sub-bacias hidrográficas definidas pelos maciços montanhosos, pelas áreas de restrição à ocupação urbana, pelo macrozoneamento, pelos vetores de crescimento e pelas diretrizes de uso e ocupação do solo, que devem indicar os padrões de ocupação urbana a serem adotados no processo de desenvolvimento da Cidade. O ordenamento territorial da cidade deverá nortear a indicação das prioridades de investimentos e os instrumentos da política urbana a serem utilizados na gestão do território.
+                 </p>
+                </div>
+               <div class="tab_item seg-content" id="politica-urbana3">Políticas Setoriais
+
+O Título IV do Plano Diretor desdobra e detalha as determinações e recomendações da Política Urbana proposta em Políticas Públicas Setoriais. Neste Plano Diretor, as Políticas Setoriais são classificadas em:
+Políticas de Desenvolvimento Urbano e Ambiental:
+Política de Meio Ambiente
+Política de Patrimônio Cultural
+Política de Habitação
+Política de Transportes
+Política de Saneamento Ambiental e Serviços Públicos
+Política de Regularização Urbanística e Fundiária
+Políticas Econômicas:
+Trabalho e Renda
+Desenvolvimento Econômico, Científico e Tecnológico
+Turismo
+Agricultura, Pesca e Abastecimento
+Políticas Sociais:
+Educação
+Saúde
+Assistência Social
+Cultura
+Esporte e Lazer
+Políticas de Gestão:
+Informação
+Segurança Urbana
+AdministraçãoTributária
+Administração do Patrimônio Imobiliário Municipal
+Atividades Econômicas
+</div>
+               <div class="tab_item seg-content" id="instrumentos">Instrumentos
+
+O Título III do Plano Diretor descreve os instrumentos legais que irão auxiliar a implementar a Política Urbana proposta. Estes instrumentos têm como objetivos:
+</div>
+               <div class="tab_item seg-content " id="politica-urbana5">Содержимое 5</div>
+            </div>
+          </div>
           
-          <a href="#panel2" class="show-for-small-only">Accordion 2</a>
-	        			<div id="panel1" class="content active">
-	        				<div class="content-box section-box">
-		        				<h4>Tab / Accordion Content 1</h4>
-		        			</div>
-                </div>
-    </div>
-  </div>
+      </div>
+     
 
 
 
