@@ -2081,8 +2081,7 @@ a img.logo{
   width: 100%;
 }
 
-.tab_item a.button 
-,.tab_content a.button {
+.tab_item a.button ,.tab_content a.button {
     background: none;
     border: 2px solid #99cc33;
     font-weight: bold;
@@ -2092,8 +2091,7 @@ a img.logo{
     color: #0D2A4C;
 }
 
-.tab_item  a.button:hover, 
-.tab_content a.button:hover {
+.tab_item  a.button:hover, .tab_content a.button:hover {
   background: #99cc33 
   color: #fff;
 }
