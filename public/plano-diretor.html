@@ -30,13 +30,7 @@
   <script src="/assets/javascripts/vendor/readmore.min.js"></script>
   <script src="/assets/javascripts/main.js"></script>
 </head>
-  <script>
-    $(".tab_item").not(":first").hide();
-    $(".wrapper .tab").click(function() {
-    	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-    	$(".tab_item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
-  </script>
+  
   
 <body>
 
@@ -299,7 +293,7 @@ O Título III do Plano Diretor descreve os instrumentos legais que irão auxilia
   });
  
  
-   var topBar      = document.getElementById('fixed-header');
+   var topBar= document.getElementById('fixed-header');
 
     function parallax(){
 

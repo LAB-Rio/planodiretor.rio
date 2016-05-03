@@ -1,5 +1,7 @@
 (function () {
     'use strict'
+    
+    
     console.log("Plano Diretor by LAB.Rio");
     
     var PlanoDiretor = {};
@@ -23,32 +25,15 @@
         window.open($(this).attr('href'));
     });
     
-    
-
-    
-    var topBar = document.getElementById('fixed-header');
-
-    function parallax(){
-      if (window.pageYOffset > 100) {
-        topBar.style.top = "0px";
-      } else { 
-        topBar.style.top = "-200px";
-      }
-    };
-    
-    
-
-    requestAnimationFrame(parallax);
-    window.addEventListener('scroll', function(){
-      requestAnimationFrame(parallax);
-    }, false);
-    
-  
- 
 }());
 
-$(".tab_item").not(":first").hide();
-    $(".wrapper .tab").click(function() {
+jQuery( document ).ready( function() {
+  
+  $(".tab_item").not(":first").hide();
+      $(".wrapper .tab").click(function() {
     	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
     	$(".tab_item").hide().eq($(this).index()).fadeIn()
-    }).eq(0).addClass("active");
+  }).eq(0).addClass("active");
+  
+} );
+
