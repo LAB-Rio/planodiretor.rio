@@ -1663,12 +1663,11 @@
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #99cc33 !important;
 		}
 
 	strong, b {
@@ -1681,6 +1680,9 @@
 
 	p {
 		margin: 0 0 2em 0;
+	}
+	p a {
+		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
 	h1 {
@@ -1889,12 +1891,12 @@
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: #99CC33;
+				border-color: #99CC33;
 			}
 
 			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
+				background-color: rgba(153, 204, 51, 0.1);
 			}
 
 /* List */
@@ -2170,8 +2172,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #f2849e;
-			box-shadow: inset 0 -1px 0 0 #f2849e;
+			border-bottom-color: #99CC33;
+			box-shadow: inset 0 -1px 0 0 #99CC33;
 		}
 
 	.select-wrapper {
@@ -2281,8 +2283,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #f2849e;
-			box-shadow: 0 0 0 1px #f2849e;
+			border-color: #99CC33;
+			box-shadow: 0 0 0 1px #99CC33;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2502,8 +2504,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: #99CC33 !important;
+			box-shadow: inset 0 0 0 2px #99CC33;
 		}
 
 		input[type="submit"]:active,
@@ -2545,7 +2547,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #f2849e;
+				background-color: #99CC33;
 			}
 
 			input[type="submit"].special:active,
@@ -2723,7 +2725,7 @@
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #99CC33;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2867,13 +2869,14 @@
 			}
 
 			#header .logo .symbol {
-				margin-right: 0.65em;
+				margin-right: 51.65em;
+				margin-top: 12px;
 			}
 
 				#header .logo .symbol img {
 					display: block;
-					width: 8em;
-					height: 2em;
+					width: 10em;
+    				height: 3em;
 				}
 
 		#header nav {

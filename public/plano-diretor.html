@@ -9,9 +9,13 @@
   <meta property="og:description" content="" />
   <meta property="og:image" content="" />
   <link href="images/logo-favicon.png" rel="shortcut icon">
-  <link type="text/css" rel="stylesheet" href="./assets/stylesheets/normalize.css"/>
+  <!-- TimeLine -->
+  <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/fonts/font.default.css">
+  <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
   <link type="text/css" rel="stylesheet" href="./assets/stylesheets/foundation.min.css"/>
   <link type="text/css" rel="stylesheet" href="./assets/stylesheets/application.css"/>
+  
+  
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,17 +26,20 @@
     ga('send', 'pageview');
 
   </script>
-   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-   <script src="../bower_components/foundation/js/foundation.js"></script>
-   <script src="../bower_components/foundation/js/foundation/foundation.accordion.js"></script>
-   <script src="../bower_components/foundation/js/foundation/foundation.tab.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/foundation/js/foundation.js"></script>
+  <script src="../bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+  <script src="../bower_components/foundation/js/foundation/foundation.tab.js"></script>
   <script src="/assets/javascripts/vendor/readmore.min.js"></script>
   <script src="/assets/javascripts/main.js"></script>
+  <!-- Timeline -->
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  
 </head>
   
   
 <body>
-
+  
   <div id="fixed-header">  
 
     <div class="row">
@@ -130,37 +137,12 @@
 
 
 
-    <div class="bg-content gray">
+    <div class="bg-content white">
       <div class="row">
         <h2 id="historico"> Histórico </h2>
-
-        <div class="medium-12 columns">
-          <div class="historico">
-            <h1 class="titulo historico"> 1988 - Constituição Federal e 1990 - Lei Orgânica Municipal</h1>
-              <ul><li> Instituição do Plano Diretor como instrumento básico da política urbana</li></ul>
-            
-            <h1 class="titulo historico"> 1992 - Plano Diretor Decenal </h1>
-              <ul>
-                <li> Meio ambiente e Patrimônio como Condicionantes à ocupação</li>
-                <li> Processo contínuo de Planejamento Urbano</li>
-              </ul>
-              
-            <h1 class="titulo historico"> 2001 - Estatuto da Cidade </h1>
-              <ul>
-                <li> Novos instrumentos de planejamento e gestão da política urbana</li>
-                <li> Exiência de Sistema de Planejamento e Controle</li>
-              </ul> 
-              
-            <h1 class="titulo historico"> 2011 - Publicação do novo Plano Diretor de Desenvolvimento Urbano Sustentável da Cidade do Rio de Janeiro  </h1>
-              <ul>
-                <li>Instituição do Sistema integrado de Planejamento e Gestão Urbana</li>
-              </ul>
-            
-            <h1 class="titulo historico"> 2012 - Publicação do Decreto nº 35652 </h1>
-              <ul>
-                <li>Criação do Comitê Técnico Permanante de Acompanhamento do Plano Diretor</li>
-              </ul>
-          </div>
+        <div id='timeline-embed' style="width: 100%; height: 650px"></div>
+        
+        
         </div>
 
         </div>
@@ -197,7 +179,7 @@
                     e provisão de saneamento, transportes, habitação e serviços públicos para todos os seus habitantes.</p>
                                       
                                       
-                    <a class="button" href="#"> Veja na integra </a>
+                    <a class="button" href="/politica-urbana.html"> Veja na integra </a>
                      
                   </div>
                <div class="tab_item seg-content" id="ordenamento-territorial">
@@ -315,6 +297,17 @@
 
 
  </script>
+ <script type="text/javascript">
+  var additionalOptions = {
+    start_at_end: true,
+    default_bg_color: {r:0, g:0, b:0},
+    timenav_height: 250
+  }
+
+  timeline = new TL.Timeline('timeline-embed',
+  'https://docs.google.com/spreadsheets/d/1XHeDuOr0AKr_I0St-_D_feIgmGQq5mouDKq_oX36IGc/pubhtml',
+  additionalOptions);
+        </script>
   
 
 </body>
