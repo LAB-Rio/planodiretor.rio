@@ -2079,6 +2079,7 @@ a img.logo{
 
 .tab_item ul .list-classic{
   width: 100%;
+  text-align: left;
 }
 
 .tab_item a.button ,.tab_content a.button {
