@@ -2087,10 +2087,8 @@ a img.logo{
     font-weight: bold;
     font-size: .8em;
     text-transform: uppercase;
-    margin-bottom: 25%;
     color: #0D2A4C;
 }
-
 .tab_item  a.button:hover, .tab_content a.button:hover {
   background: #99cc33 
   color: #fff;
