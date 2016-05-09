@@ -195,16 +195,20 @@ svg {
 }
 
 
-.plano-diretor-content .segments li:hover * {
+.plano-diretor-content .wrapper .segments li:hover * {
  opacity: 1;
 }
 
-.plano-diretor-content .segments li img {
+.plano-diretor-content .wrapper .segments li img {
   opacity: .3;
 }
 
 
-.plano-diretor-content .segments li.active img {
+.plano-diretor-content .wrapper .segments li.active img {
+  opacity: 1;
+}
+
+a.tab.active img{
   opacity: 1;
 }
 
@@ -2182,3 +2186,8 @@ a img.logo{
     
   }
 } 
+
+/*Box Tabs*/
+.wrapper {
+    min-height: 77vh;
+}
