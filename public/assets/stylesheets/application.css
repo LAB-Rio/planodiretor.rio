@@ -204,11 +204,7 @@ svg {
 }
 
 
-.plano-diretor-content .wrapper .segments li.active img {
-  opacity: 1;
-}
-
-a.tab.active img{
+.plano-diretor-content .wrapper .segments li.current img {
   opacity: 1;
 }
 
