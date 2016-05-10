@@ -12,6 +12,8 @@
   <link type="text/css" rel="stylesheet" href="./assets/stylesheets/normalize.css"/>
   <link type="text/css" rel="stylesheet" href="./assets/stylesheets/foundation.min.css"/>
   <link type="text/css" rel="stylesheet" href="./assets/stylesheets/application.css"/>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -22,26 +24,8 @@
     ga('send', 'pageview');
 
   </script>
-  <style>
-    .bubbleChart {
-      min-width: 400px;
-      max-width: 700px;
-      height: 700px;
-      margin: 0 auto;
-    }
-
-  </style>
-  
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="../bower_components/d3/d3.min.js"></script>
-  <script src="../bower_components/d3-transform/src/d3-transform.js"></script>
-  <script src="../bower_components/cafej/src/ext-array.js"></script>
-  <script src="../bower_components/cafej/src/misc.js"></script>
-  <script src="../bower_components/cafej/src/micro-observer.js"></script>
-  <script src="../bower_components/microplugin/src/microplugin.js"></script>
-  <script src="../bower_components/bubble-chart/src/bubble-chart.js"></script>
-  <script src="../bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
-  <script src="../bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+ 
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
 </head>
 <body>
@@ -108,7 +92,7 @@
     <div class="bg-content white">
       <div class="row">
         <header>
-          <h2 id="siplan"> Sistema Integrado de Planejamento e Gestão Urbana (SIPLAN)</h2>
+          <h2 class="title" id="siplan"> Sistema Integrado de Planejamento e Gestão Urbana (SIPLAN)</h2>
         </header>
         <article>
           <p>Segundo orientação do <a href="http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10257.htm" target="_blank">Estatuto da Cidade (Lei Nº 10.257 de 2001)</a>, o Plano Diretor de Desenvolvimento Sustentável do Município do Rio de Janeiro instituiu o Sistema Integrado de Planejamento e Gestão Urbana (SIPLAN), como estratégia de implementação, acompanhamento e controle de suas determinações. O SIPLAN foi criado com o objetivo de integrar as diversas políticas públicas setoriais para que a Política Urbana proposta no atual Plano Diretor seja implementada de forma plena e efetiva.  
@@ -151,7 +135,7 @@
          
          </article>
           
-          <h2 id="ctpd">Comitê Técnico de Acompanhamento do Plano Diretor (CTPD) </h2>
+          <h2 class="title" id="ctpd">Comitê Técnico de Acompanhamento do Plano Diretor (CTPD) </h2>
           
           <article>
           <p>
@@ -175,7 +159,7 @@
           <img src="images/esquema3.png" />
           </article>
           
-          <h2 id="acompanhamento">Processo de acompanhamento </h2>
+          <h2 class="title" id="acompanhamento">Processo de acompanhamento </h2>
           
  
           <p>
@@ -186,7 +170,7 @@
             Além disso, a <a  target="_blank" href="http://www2.rio.rj.gov.br/smu/buscafacil/Arquivos/PDF/LC111M.PDF">Lei Complementar Nº 111 em 2011</a>, que institui o Plano Diretor, prevê que o Comitê Técnico de Acompanhamento do Plano Diretor elabore anualmente um Relatório de Acompanhamento e Controle do plano, indicando as ações realizadas e avaliando o cumprimento das metas estabelecidas, de acordo com as propostas das Políticas Públicas Setoriais. Os relatórios documentam o processo de trabalho do Comitê Técnico no período de 2012 a 2015, englobando a metodologia de trabalho, os temas de discussão, os encaminhamentos gerados no âmbito do Comitê Técnico de Acompanhamento do Plano Diretor e o Diagnóstico Urbano Ambiental.
           </p>
  
-          <h2>Diagnóstico Urbano e Ambiental</h2>
+          <h2 class="title">Diagnóstico Urbano e Ambiental</h2>
          
           <p>
             Para embasar o processo de avaliação do Plano Diretor, o Comitê Técnico de Acompanhamento do Plano Diretor (CTPD) desenvolveu o Diagnóstico Urbano Ambiental da Cidade do Rio de Janeiro. 
@@ -217,7 +201,7 @@
           
           
           
-          <h2 id="monitoramento">Monitoramento</h2>
+          <h2 class="title" id="monitoramento">Monitoramento</h2>
           <p>
             O sistema de monitoramento tem como objetivo acompanhar a implementação das ações estruturantes do Plano Diretor e os programas e projetos a elas relacionados, garantindo a transparência e a interação sociedade-governo. São avaliadas as ações estruturantes das seguintes Políticas Setoriais: Meio Ambiente; Saneamento Ambiental e Serviços Públicos; Mobilidade; Patrimônio Cultural; e Habitação e Regularização, com base na avaliação técnica dos diferentes órgãos e secretárias da Prefeitura da Cidade do Rio de Janeiro. 
 
@@ -255,7 +239,6 @@
     </div>
   </div>
   
-  <script src="/assets/javascripts/bublechart-scheme2.js"></script>
   <script src="/assets/javascripts/vendor/readmore.min.js"></script>
    <script type="text/javascript">
     $('article').readmore({
@@ -279,107 +262,6 @@
     window.addEventListener('scroll', function(){
       requestAnimationFrame(parallax);
     }, false);
-    
-    
-    $(document).ready(function () {
-  var bubbleChart = new d3.svg.BubbleChart({
-    supportResponsive: true,
-    //container: => use @default
-    size: 600,
-    //viewBoxSize: => use @default
-    innerRadius: 600 / 3.5,
-    //outerRadius: => use @default
-    radiusMin: 50,
-    //radiusMax: use @default
-    //intersectDelta: use @default
-    //intersectInc: use @default
-    //circleColor: use @default
-    data: {
-      items: [
-        {text: "IPP", r: "236"},
-        {text: "SMU/OGPE", r: "382"},
-        {text: "SUBDEC", r: "170"},
-        {text: "CDURP", r: "123"},
-        {text: "D", r: "12"},
-        {text: "Python", r: "2007"},
-        {text: "C/C++", r: "382"},
-        {text: "Pascal", r: "10"},
-        {text: "Something", r: "170"},
-        {text: "UERJ", r: "170"},
-    
-      ],
-      eval: function (item) {return item.r;},
-      classed: function (item) {return item.text.split(" ").join("");}
-    },
-    plugins: [
-      {
-        name: "central-click",
-        options: {
-          text: "(See more detail)",
-          style: {
-            "font-size": "12px",
-            "font-style": "italic",
-            "font-family": "Source Sans Pro, sans-serif",
-            //"font-weight": "700",
-            "text-anchor": "middle",
-            "fill": "white"
-          },
-          attr: {dy: "200px"},
-          centralClick: function() {
-            alert("Here is more details!!");
-          }
-        }
-      },
-      {
-        name: "lines",
-        options: {
-          format: [
-            {// Line #0
-              textField: "r",
-              classed: {r: true},
-              style: {
-                "font-size": "28px",
-                "font-family": "Source Sans Pro, sans-serif",
-                "text-anchor": "middle",
-                fill: "white"
-              },
-              attr: {
-                dy: "0px",
-                x: function (d) {return d.cx;},
-                y: function (d) {return d.cy;}
-              }
-            },
-            {// Line #1
-              textField: "text",
-              classed: {text: true},
-              style: {
-                "font-size": "14px",
-                "font-family": "Source Sans Pro, sans-serif",
-                "text-anchor": "middle",
-                fill: "white"
-              },
-              attr: {
-                dy: "20px",
-                x: function (d) {return d.cx;},
-                y: function (d) {return d.cy;}
-              }
-            }
-          ],
-          centralFormat: [
-            {// Line #0
-              style: {"font-size": "50px"},
-              attr: {}
-            },
-            {// Line #1
-              style: {"font-size": "30px"},
-              attr: {dy: "40px"}
-            }
-          ]
-        }
-      }]
-  });
-});
-
 
 
   </script>

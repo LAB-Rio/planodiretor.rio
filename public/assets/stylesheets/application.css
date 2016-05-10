@@ -137,7 +137,7 @@ svg {
   padding-bottom: 2em;
 }
 
-.bg-content h2 {
+.bg-content .title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: .4em;
@@ -148,18 +148,18 @@ svg {
   background: #99cc33;
 }
 
-.green h2 {
-  color: #0D2A4C !important;
+.green .title {
+  color: #0D2A4C;
   border-bottom: 1px solid #0D2A4C;
 }
 
 
-.white h2 {
+.white .title {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
 
-.blue h2 {
+.blue .title {
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -167,7 +167,7 @@ svg {
   background: #d9d9d9;
 }
 
-.gray h2 {
+.gray title {
   color: #0D2A4C; 
   border-bottom: 1px solid #0D2A4C;
 }
@@ -175,7 +175,7 @@ svg {
 
 
 
-.plano-diretor-content h2 {
+.plano-diretor-content .title {
   color: white;
 }
 
@@ -465,7 +465,7 @@ svg {
   padding-bottom: 2em;
 }
 
-.bg-content h2 {
+.bg-content .title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: .4em;
@@ -476,18 +476,15 @@ svg {
   background: #99cc33;
 }
 
-.green h2 {
-  color: #0D2A4C !important;
-  border-bottom: 1px solid #0D2A4C;
-}
 
 
-.white h2 {
+
+.white .title {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
 
-.blue h2 {
+.blue .title {
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -495,7 +492,7 @@ svg {
   background: #d9d9d9;
 }
 
-.gray h2 {
+.gray .title {
   color: #0D2A4C; 
   border-bottom: 1px solid #0D2A4C;
 }
@@ -503,7 +500,7 @@ svg {
 
 
 
-.plano-diretor-content h2 {
+.plano-diretor-content .title {
   color: white;
 }
 
@@ -788,7 +785,7 @@ svg {
   padding-bottom: 2em;
 }
 
-.bg-content h2 {
+.bg-content .title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: .4em;
@@ -799,18 +796,14 @@ svg {
   background: #99cc33;
 }
 
-.green h2 {
-  color: #0D2A4C !important;
-  border-bottom: 1px solid #0D2A4C;
-}
 
 
-.white h2 {
+.white .title {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
 
-.blue h2 {
+.blue .title {
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -818,7 +811,7 @@ svg {
   background: #d9d9d9;
 }
 
-.gray h2 {
+.gray .title {
   color: #0D2A4C; 
   border-bottom: 1px solid #0D2A4C;
 }
@@ -826,7 +819,7 @@ svg {
 
 
 
-.plano-diretor-content h2 {
+.plano-diretor-content .title {
   color: white;
 }
 
@@ -1117,7 +1110,7 @@ svg {
   padding-bottom: 2em;
 }
 
-.bg-content h2 {
+.bg-content .title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: .4em;
@@ -1128,18 +1121,14 @@ svg {
   background: #99cc33;
 }
 
-.green h2 {
-  color: #0D2A4C !important;
-  border-bottom: 1px solid #0D2A4C;
-}
 
 
-.white h2 {
+.white .title {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
 
-.blue h2 {
+.blue .title {
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -1147,7 +1136,7 @@ svg {
   background: #d9d9d9;
 }
 
-.gray h2 {
+.gray .title {
   color: #0D2A4C; 
   border-bottom: 1px solid #0D2A4C;
 }
@@ -1155,7 +1144,7 @@ svg {
 
 
 
-.plano-diretor-content h2 {
+.plano-diretor-content .title {
   color: white;
 }
 
@@ -1445,7 +1434,7 @@ svg {
   padding-bottom: 2em;
 }
 
-.bg-content h2 {
+.bg-content .title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: .4em;
@@ -1456,18 +1445,15 @@ svg {
   background: #99cc33;
 }
 
-.green h2 {
-  color: #0D2A4C !important;
-  border-bottom: 1px solid #0D2A4C;
-}
 
 
-.white h2 {
+
+.white .title {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
 
-.blue h2 {
+.blue .title {
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -1475,7 +1461,7 @@ svg {
   background: #d9d9d9;
 }
 
-.gray h2 {
+.gray .title {
   color: #0D2A4C; 
   border-bottom: 1px solid #0D2A4C;
 }
@@ -1483,7 +1469,7 @@ svg {
 
 
 
-.plano-diretor-content h2 {
+.plano-diretor-content .title {
   color: white;
 }
 
@@ -1778,7 +1764,7 @@ svg {
   padding-bottom: 2em;
 }
 
-.bg-content h2 {
+.bg-content .title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-bottom: .4em;
@@ -1789,18 +1775,14 @@ svg {
   background: #99cc33;
 }
 
-.green h2 {
-  color: #0D2A4C !important;
-  border-bottom: 1px solid #0D2A4C;
-}
 
 
-.white h2 {
+.white .title {
   color: #99cc33;
   border-bottom: 1px solid #99cc33;
 }
 
-.blue h2 {
+.blue .title {
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -1808,7 +1790,7 @@ svg {
   background: #d9d9d9;
 }
 
-.gray h2 {
+.gray .title {
   color: #0D2A4C; 
   border-bottom: 1px solid #0D2A4C;
 }
@@ -1816,7 +1798,7 @@ svg {
 
 
 
-.plano-diretor-content h2 {
+.plano-diretor-content .title {
   color: white;
 }
 
@@ -2027,14 +2009,14 @@ label select {
     -webkit-appearance:none; /* Safari and Chrome */
 }
 
-li h2 {
+li .title {
   text-align: center;
 }
 .etapa .--title{
-  text-align: center;
+ 
 }
 .etapa .--sub{
-  text-align: center;
+
   font-weight: 600;
   font-size: 20px;
 }
@@ -2105,7 +2087,7 @@ a img.logo{
 
 /* TimeLine*/
 
-#timeline-embed .tl-slide.tl-full-image-background p, .tl-slide.tl-full-color-background p, .tl-slide.tl-full-image-background h1, .tl-slide.tl-full-color-background h1, .tl-slide.tl-full-image-background h2, .tl-slide.tl-full-color-background h2, .tl-slide.tl-full-image-background h3, .tl-slide.tl-full-color-background h3, .tl-slide.tl-full-image-background h4, .tl-slide.tl-full-color-background h4, .tl-slide.tl-full-image-background h5, .tl-slide.tl-full-color-background h5, .tl-slide.tl-full-image-background h6, .tl-slide.tl-full-color-background h6 {
+#timeline-embed .tl-slide.tl-full-image-background p, .tl-slide.tl-full-color-background p, .tl-slide.tl-full-image-background h1, .tl-slide.tl-full-color-background h1, .tl-slide.tl-full-image-background .title, .tl-slide.tl-full-color-background .title, .tl-slide.tl-full-image-background h3, .tl-slide.tl-full-color-background h3, .tl-slide.tl-full-image-background h4, .tl-slide.tl-full-color-background h4, .tl-slide.tl-full-image-background h5, .tl-slide.tl-full-color-background h5, .tl-slide.tl-full-image-background h6, .tl-slide.tl-full-color-background h6 {
     color: #626263 !important;
     text-shadow: 1px 1px 1px transparent !important;
     border: none;
@@ -2207,4 +2189,76 @@ a.button {
 
 article p {
     text-align: justify;
+}
+
+/* Avaliacao */
+
+#plataforma-info .title.white-type{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#plataforma-info p{
+  color: #fff;
+}
+
+#plataforma-info .button {
+  border: 2px solid #0D2A4C;
+}
+
+#envio-docs .blue {
+  background: #0D2A4C;
+  
+}
+
+.file {
+position: relative;
+display: inline-block;
+width: 303px;
+height: 34px;
+background: url('http://radity.com/static/img/form/file.png') no-repeat 0 0;
+}
+
+.file input {
+position: absolute;
+right: 0;
+right: 0;
+width: 100%;
+height: 34px;
+opacity: 0;
+-moz-opacity: 0;
+filter: alpha(opacity=0);
+appearance: none;
+-moz-appearance: none;
+-webkit-appearance: none;
+z-index: 30;
+}
+
+.file .value {
+position: absolute;
+top: 8px;
+left: 11px;
+font: 14px ProximaNovaRegular, Helvetica, Arial, sans-serif;
+color: #444;
+z-index: 10;
+}
+
+.file .bt-value {
+position: absolute;
+top: 8px;
+right: 20px;
+font: 14px ProximaNovaBold, Helvetica, Arial, sans-serif !important;
+color: white !important;
+text-shadow: 0 -1px 0 rgba(1, 2, 2, 0.25) !important;
+z-index: 10;
+}
+
+
+
+.etapa .--title {
+    padding: 5px;
+}
+
+.paragraph-white{
+  color: #fff;
 }
