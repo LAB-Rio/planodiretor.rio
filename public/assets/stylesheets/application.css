@@ -2187,3 +2187,20 @@ a img.logo{
 .wrapper {
     min-height: 77vh;
 }
+
+/*Acompanhamento Page*/
+a.button {
+    background: none;
+    border: 2px solid #99cc33;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #0D2A4C;
+}
+
+.margin-bottom-40{
+  margin-bottom: 40px;
+}
+p{
+  text-align:justify;	
+}
