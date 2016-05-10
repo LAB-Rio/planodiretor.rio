@@ -2201,6 +2201,10 @@ a.button {
 .margin-bottom-40{
   margin-bottom: 40px;
 }
-p{
+#main-content p{
   text-align:justify;	
+}
+
+article p {
+    text-align: justify;
 }
