@@ -1,0 +1,385 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1">
+
+
+  <title>Plano Diretor - Acompanhamento</title>
+  <meta property="og:title" content="Plano Diretor" />
+  <meta property="og:rription" content="" />
+  <meta property="og:image" content="" />
+
+  <link type="text/css" rel="stylesheet" href="./assets/stylesheets/normalize.css"/>
+  <link type="text/css" rel="stylesheet" href="./assets/stylesheets/foundation.min.css"/>
+  <link type="text/css" rel="stylesheet" href="./assets/stylesheets/application.css"/>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57287076-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <style>
+    .bubbleChart {
+      min-width: 400px;
+      max-width: 700px;
+      height: 700px;
+      margin: 0 auto;
+    }
+
+  </style>
+  
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/d3/d3.min.js"></script>
+  <script src="../bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="../bower_components/cafej/src/ext-array.js"></script>
+  <script src="../bower_components/cafej/src/misc.js"></script>
+  <script src="../bower_components/cafej/src/micro-observer.js"></script>
+  <script src="../bower_components/microplugin/src/microplugin.js"></script>
+  <script src="../bower_components/bubble-chart/src/bubble-chart.js"></script>
+  <script src="../bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+  <script src="../bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+
+</head>
+<body>
+
+  <div id="fixed-header">  
+
+    <div class="row">
+      <div class="medium-11 columns logo">
+        <a href="/"><img src="./assets/images/logopd.png" width="180" alt="" title=""/></a>
+      </div>
+
+      <div class="medium-1 columns text-right">
+        <a href="#menu" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#333" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+            <path fill="#333" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+            <path fill="#333" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="page-header" class="plano-diretor">
+    <div class="row header-inner">
+      <div class="medium-11 columns logo">
+        <a href="/"><img src="./assets/images/logopd.png" width="180" alt="" title=""/></a>
+      </div>
+
+      <div class="medium-1 columns text-right">
+        <a href="#menu" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#444" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+            <path fill="#444" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+            <path fill="#444" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+          </svg>
+        </a>
+      </div>
+  
+    </div>
+  </div>
+  <div class="description plano-diretor">
+    <div class="row">
+      <div class="medium-8 medium-centered text-center columns main-text">
+        <h1>Acompanhamento</h1>
+      </div>
+
+      <div class="medium-8 medium-centered columns text-center">
+        <nav class="tabs">
+          <a href="#siplan">Siplan</a>
+          <a href="#">Relatórios</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="main-content">
+    <div class="bg-content white">
+      <div class="row">
+        <header>
+          <h2 id="siplan"> Siplan </h2>
+        </header>
+        <article>
+          <p>Segundo orientação do <a href="http://www.planalto.gov.br/ccivil_03/leis/LEIS_2001/L10257.htm" target="_blank">Estatuto da Cidade (Lei Nº 10.257 de 2001)</a>, o Plano Diretor de Desenvolvimento Sustentável do Município do Rio de Janeiro instituiu o Sistema Integrado de Planejamento e Gestão Urbana (SIPLAN), como estratégia de implementação, acompanhamento e controle de suas determinações. O SIPLAN foi criado com o objetivo de integrar as diversas políticas públicas setoriais para que a Política Urbana proposta no atual Plano Diretor seja implementada de forma plena e efetiva.  
+          </p>
+          <p>
+              De acordo com o Art. 302 do Plano Diretor, o Sistema Integrado de Planejamento e Gestão Urbana tem como objetivo fomentar o processo contínuo e integrado de planejamento urbano do Município e a articulação entre os diversos órgãos municipais responsáveis pelo desenvolvimento urbano e ambiental da cidade. 
+          </p>
+          <p>Suas atribuições compreendem:</p>
+          <ul>
+            <li>O aperfeiçoamento constante do conteúdo do plano, através do detalhamento, regulamentação, revisão e atualização de suas diretrizes, programas e instrumentos;
+            </li>
+            <li>
+              A implementação da política urbana disposta no Plano Diretor, através da execução e integração intersetorial das ações decorrentes de suas propostas, assim como pela gestão de seus instrumentos legais;
+            </li>
+            <li>
+              O monitoramento da implementação do Plano Diretor e avaliação de seus resultados.
+            </li>
+          </ul>
+          <p>Para possibilitar o desenvolvimento destas tarefas, o Sistema Integrado de Planejamento e Gestão Urbana é composto por dois Comitês:</p>
+          <ul>
+            <li>Comitê Governamental - Constituído por titulares de órgãos municipais direta ou indiretamente responsáveis pelo desenvolvimento urbano e ambiental do Município.</li>
+            <li>
+              Comitê Técnico - Composto por técnicos destes mesmos órgãos, com a atribuição de promover ações necessárias ao desenvolvimento do processo contínuo e integrado de planejamento urbano, rrito acima.
+            </li>
+          </ul>
+          
+          <!-- Bubble chart Aqui -->
+          <div class="bubbleChart"></div>
+          
+          <h3>Estratégias de Implementação do Plano Diretor</h3>
+          
+          <h4>Os Sistemas Integrados</h4>
+          <p>O desafio que o Plano Diretor de 2011 coloca, ao instituir o Sistema Integrado de Planejamento e Gestão Urbana, é de como desenhar uma política pública compartilhada e articulada, baseada no respeito às autonomias e na cooperação para a consecução de objetivos comuns. Como coordenar ações entre entes públicos horizontal e verticalmente? Como desenhar a arquitetura da articulação entre competências e fortalecer o diálogo e a participação? </p>
+          
+          <p>
+            Além do Sistema Integrado de Planejamento e Gestão Urbana, foram também instituídos pelo Plano Diretor os Sistemas de Planejamento e Gestão Ambiental, Informações Urbanas, Defesa da Cidade e Controle do Uso e Ocupação do Solo. 
+          </p>
+          
+          <p>
+            O Sistema de Planejamento e Gestão Ambiental (Art. 314) tem por objetivo de integrar diversas políticas públicas concernentes à proteção e valorização do meio ambiente e da paisagem, articulando ações das Políticas Municipais de Meio Ambiente, Saneamento Ambiental e Patrimônio Cultural às ações dos órgãos e entidades estaduais e federais. 
+          </p>
+          
+          <p>
+            O Sistema Municipal de Informações Urbanas (Art. 315) foi institucionalizado para integrar, sistematizar, gerir e disseminar os dados e informações municipais de natureza física, de maneira a dar suporte às ações de planejamento e aprimorar a qualidade da gestão urbana com bases científicas. 
+      
+          </p>
+          <p>
+            O Sistema de Defesa da Cidade, que já existia anteriormente, foi reafirmado pelo atual Plano Diretor de modo a articular ações preventivas e responsivas a situações de risco à população e ao patrimônio da cidade, em casos de ameaça ou dano às condições normais de funcionamento da cidade, entre as quais: enchentes, deslizamentos, desmoronamentos, incêndios ou outras situações de risco (Arts. 317 a 321). 
+          </p>
+          <p>
+            O Sistema de Controle de Uso e Ocupação do Solo  visa planejar, coordenar, articular e implementar as ações dos diversos órgãos setoriais municipais, voltadas ao efetivo controle, monitoramento e fiscalização do uso e ocupação do solo e criar uma política de controle do uso e ocupação do solo (Arts. 322 a 325).
+          </p>
+          <div> + um esquema</div>
+          
+         <h2>Atuação do Comitê Técnico de Acompanhamento do Plano Diretor (CTPD) </h2> 
+      
+          <p>O Comitê Técnico de Acompanhamento do Plano Diretor (CTPD) é uma estrutura institucional de caráter técnico que reúne representantes setoriais de planejamento e execução da administração direta e indireta do Município que atuam no desenvolvimento urbano e ambiental da cidade. O CTPD foi instituído e regulamentado pelo <a href="http://www.rio.rj.gov.br/dlstatic/10112/3678296/DLFE-268935.pdf/DecretoMunicipaln35652criaoComitedeAcompanhamentodoPlanoDiretor.pdf" target="_blank">Decreto Nº 35652, de 22 de maio de 2012</a>, atendendo ao estabelecido no Estatuto da Cidade (Lei Nº 10.257 de 2001) e no Plano Diretor (<a href="http://www2.rio.rj.gov.br/smu/buscafacil/Arquivos/PDF/LC111M.PDF" target="_blank">Lei Complementar Nº 111 em 2011</a>).</p>
+      
+          <p>Coordenado pela Coordenadoria de Macroplanejamento da Secretaria Municipal de Urbanismo, o Comitê Técnico de Acompanhamento do Plano Diretor (CTPD) tem como função debater, desenvolver e monitorar a aplicação das diretrizes e políticas setoriais que compõem o Plano Diretor e articular a implementação das ações estruturantes previstas no plano.</p>
+       
+          <p>O CTPD tem ainda a responsabilidade de dar suporte à elaboração do Plano Plurianual, compatibilizando-o com as prioridades do Plano Diretor, dar suporte à execução dos Planos Estratégicos e elaborar um relatório anual de acompanhamento e avaliação dos resultados da implementação do Plano Diretor, ações requisitadas pelo Estatuto da Cidade.</p>
+      
+          <p>O trabalho do Comitê Técnico de Acompanhamento do Plano Diretor se pauta pelo princípio da articulação entre os diversos setores do planejamento urbano municipal, de acordo com a estratégia de implementação da Política Urbana proposta pela <a href="http://www2.rio.rj.gov.br/smu/buscafacil/Arquivos/PDF/LC111M.PDF" target="_blank">Lei Complementar Nº 111 em 2011 (Art.298)</a>. Além disso, a própria lei que institui o Plano Diretor define uma série de ações e regulamentações de seu texto. Desta forma, foram levantadas, no âmbito do Comitê, todas as ações intersetoriais e, dentre estas, destacadas as ações prioritárias ao desenvolvimento urbano e ambiental da Cidade, levando em consideração as ações demandadas pelo próprio Plano Diretor. Este levantamento foi realizado com o envolvimento dos órgãos integrantes do CTPD, com foco nas suas responsabilidades atreladas a cada uma destas ações. </p>
+      
+        </article>
+      </div>
+    
+    <div class="bg-content green acompanhamento-content">
+      <div class="row">
+        <div class="medium-12 columns">
+          <h2> Relatórios </h2>
+          <p>Para baixar os relatórios do Plano Diretor, basta clicar nos títulos que mais te interessam.</p>
+        </div>
+  
+
+        <div class="medium-4 columns">
+          <div class="bg">
+            <span class="order">1</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="bg">
+            <span class="order">2</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 end columns">
+          <div class="bg">
+            <span class="order">3</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="bg">
+            <span class="order">4</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="bg">
+            <span class="order">5</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 end columns">
+          <div class="bg">
+            <span class="order">6</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="bg">
+            <span class="order">7</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="bg">
+            <span class="order">8</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+        <div class="medium-4 end columns">
+          <div class="bg">
+            <span class="order">9</span><a href="">Auditorias Especiais</a>
+          </div>
+        </div>
+
+
+
+       </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="footer">
+    <div class="row">
+      <a href="">LAB.Rio</a>
+    </div>
+  </div>
+  <script src="/assets/javascripts/bublechart-scheme2.js"></script>
+  <script src="/assets/javascripts/vendor/readmore.min.js"></script>
+   <script type="text/javascript">
+    $('article').readmore({
+      moreLink: '<a class="read-more" href="#">Leia Mais</a>',
+      speed: 85,
+      lessLink: '<a href="#" class="read-more">Leia menos</a>'
+    });
+
+    var topBar      = document.getElementById('fixed-header');
+
+    function parallax(){
+
+      if (window.pageYOffset > 100) {
+        topBar.style.top = "0px";
+      } else { 
+        topBar.style.top = "-200px";
+      }
+    };
+
+    requestAnimationFrame(parallax);
+    window.addEventListener('scroll', function(){
+      requestAnimationFrame(parallax);
+    }, false);
+    
+    
+    $(document).ready(function () {
+  var bubbleChart = new d3.svg.BubbleChart({
+    supportResponsive: true,
+    //container: => use @default
+    size: 600,
+    //viewBoxSize: => use @default
+    innerRadius: 600 / 3.5,
+    //outerRadius: => use @default
+    radiusMin: 50,
+    //radiusMax: use @default
+    //intersectDelta: use @default
+    //intersectInc: use @default
+    //circleColor: use @default
+    data: {
+      items: [
+        {text: "IPP", r: "236"},
+        {text: "SMU/OGPE", r: "382"},
+        {text: "SUBDEC", r: "170"},
+        {text: "CDURP", r: "123"},
+        {text: "D", r: "12"},
+        {text: "Python", r: "2007"},
+        {text: "C/C++", r: "382"},
+        {text: "Pascal", r: "10"},
+        {text: "Something", r: "170"},
+        {text: "UERJ", r: "170"},
+    
+      ],
+      eval: function (item) {return item.r;},
+      classed: function (item) {return item.text.split(" ").join("");}
+    },
+    plugins: [
+      {
+        name: "central-click",
+        options: {
+          text: "(See more detail)",
+          style: {
+            "font-size": "12px",
+            "font-style": "italic",
+            "font-family": "Source Sans Pro, sans-serif",
+            //"font-weight": "700",
+            "text-anchor": "middle",
+            "fill": "white"
+          },
+          attr: {dy: "200px"},
+          centralClick: function() {
+            alert("Here is more details!!");
+          }
+        }
+      },
+      {
+        name: "lines",
+        options: {
+          format: [
+            {// Line #0
+              textField: "r",
+              classed: {r: true},
+              style: {
+                "font-size": "28px",
+                "font-family": "Source Sans Pro, sans-serif",
+                "text-anchor": "middle",
+                fill: "white"
+              },
+              attr: {
+                dy: "0px",
+                x: function (d) {return d.cx;},
+                y: function (d) {return d.cy;}
+              }
+            },
+            {// Line #1
+              textField: "text",
+              classed: {text: true},
+              style: {
+                "font-size": "14px",
+                "font-family": "Source Sans Pro, sans-serif",
+                "text-anchor": "middle",
+                fill: "white"
+              },
+              attr: {
+                dy: "20px",
+                x: function (d) {return d.cx;},
+                y: function (d) {return d.cy;}
+              }
+            }
+          ],
+          centralFormat: [
+            {// Line #0
+              style: {"font-size": "50px"},
+              attr: {}
+            },
+            {// Line #1
+              style: {"font-size": "30px"},
+              attr: {dy: "40px"}
+            }
+          ]
+        }
+      }]
+  });
+});
+
+
+
+  </script>
+
+</body>
+</html>
+
+
