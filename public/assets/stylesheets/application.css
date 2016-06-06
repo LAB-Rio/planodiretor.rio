@@ -1978,9 +1978,7 @@ a.read-more, a.read-more, a.read-more:hover {
 }
 
 /** Avaliação Participativa ***/
-article ul li{
-  list-style: none;
-}
+
 article p span{
   font-weight: 600;
 }
